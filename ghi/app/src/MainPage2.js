@@ -1,8 +1,12 @@
 import './App.css';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
+import { useEffect } from "react";
 
 function MainPage2() {
+  useEffect(() => {
+    console.log("Congrats!!! You made it!!!")
+}, [])
   return (
     <div className="px-5 py-0 my-5 text-center">
       <h1>
