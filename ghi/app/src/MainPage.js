@@ -4,6 +4,7 @@ import React from 'react';
 
 function MainPage() {
   return (
+
     <div className="px-5 py-5 my-5 text-center">
     <div className="opacity-75">
     </div>
@@ -22,7 +23,6 @@ function MainPage() {
         
         
       </div>
-      <div></div>
     </div>
   );
 }
