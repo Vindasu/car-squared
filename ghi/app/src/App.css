@@ -10,10 +10,11 @@
 .BackGround2 {
     background-image: 
     url(
-"https://i.imgur.com/ltyjkkn.jpeg");
+        "https://i.imgur.com/HONA4GU.jpeg");
     background-size: "inherit";
     height: 100vh;
-    margin-top: -20px;
+    margin-top: -50px;
+    margin-left: -500px;
     background-repeat:no-repeat; 
 }
 

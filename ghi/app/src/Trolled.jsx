@@ -10,7 +10,7 @@ function Trolled() {
                     e.preventDefault();
                     window.location.href='http://localhost:3000/welcome/home';
                 }}
-                >Take me home
+                >Please... Actually Take Me Home... No More Trolls...
             </button>
             </div>
         </>
