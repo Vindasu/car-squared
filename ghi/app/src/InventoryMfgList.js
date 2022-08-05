@@ -15,6 +15,10 @@ function InventoryMfgList() {
         fetchManufacturers()
     }, [])
 
+    useEffect(() => {
+        console.log("click on man")
+    }, [])
+
     return (
         <>
             <button

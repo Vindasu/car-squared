@@ -1,4 +1,5 @@
 function InventoryPage() {
+
     return (
         <>
             <button
