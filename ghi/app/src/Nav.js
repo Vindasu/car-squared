@@ -24,29 +24,26 @@ function Nav() {
             <li className="nav-item">
               <NavLink className="nav-link" to="/services">Services</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/employee/new">New Sales Person</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/customer/new">New Customer</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/sales">Sales List</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/sales/new">New Sale</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/saleshistory">Sales History</NavLink>
-            </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="http://localhost:3000/">
-                Subjects
+              <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sales
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <NavLink className="dropdown-item" to="/">Subject A</NavLink>
-                <NavLink className="dropdown-item" to="/">Subject B</NavLink>
-                <NavLink className="dropdown-item" to="/">Subject C</NavLink>  
+              <ul className="dropdown-menu">
+                <li className="nav-item">
+                  <NavLink className="dropdown-item" to="/employee/new">New Sales Person</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="dropdown-item" to="/customer/new">New Customer</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="dropdown-item" to="/sales">Sales List</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="dropdown-item" to="/sales/new">New Sales</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="dropdown-item" to="/saleshistory">Sales History</NavLink>
+                </li>
               </ul>
             </li>
           </ul>
