@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from 'react-router-dom';
 
 function InventoryModelList() {
     const [models, setModels] = useState([])
@@ -51,7 +52,8 @@ function InventoryModelList() {
                                     <td>{model.name}</td>
                                     <td>{model.manufacturer.name}</td>
                                     <td>
-                                        <img src={model.picture_url} className="" alt="car model" width="150" height="100"></img>
+                                        <NavLink className="navbar-brand" to="/sales">
+                                        <img src={model.picture_url} className="" alt="car model" width="200" height="150"></img></NavLink>
                                     </td>
                                 </tr>
                             ))}

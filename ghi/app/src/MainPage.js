@@ -14,7 +14,7 @@ function MainPage() {
       <div className="col-lg-3 mx-auto">
       </div>
         <p className="lead mb-4">
-          CarCar takes you FarFar... <NavLink className="navbar-brand" to="/customer/new">harhar</NavLink>
+          CarCar takes you FarFar... <NavLink className="navbar-brand" to="/inventory">harhar</NavLink>
         </p>
         <p>
           Hidden Challenge: Follow the Yellow Brick Code!
@@ -26,5 +26,5 @@ function MainPage() {
     </div>
   );
 }
-console.log("Click on the result of our hilarious slogan!")
+console.log("1. Click on the result of our hilarious slogan! Rules: Refresh your page and follow the code riddles (in # order) and receive a grand prize at the end!")
 export default MainPage;
