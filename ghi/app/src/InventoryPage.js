@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 function InventoryPage() {
+
+    useEffect(() => {
+        console.log("Create a mfg, model, and automobile")
+    }, [])
 
     return (
         <>

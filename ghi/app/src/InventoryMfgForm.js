@@ -37,6 +37,11 @@ class InventoryMfgForm extends React.Component {
     this.setState({name: value})
   }
 
+  componentDidMount() {
+    // call api or anything
+    console.log("Component has been rendered");
+  }
+
   render() {
     return (
         <>

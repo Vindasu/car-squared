@@ -16,7 +16,7 @@ function InventoryMfgList() {
     }, [])
 
     useEffect(() => {
-        console.log("click on man")
+        console.log("Create Manufacturer")
     }, [])
 
     return (
