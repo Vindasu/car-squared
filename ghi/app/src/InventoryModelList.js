@@ -17,7 +17,7 @@ function InventoryModelList() {
     }, [])
 
     useEffect(() => {
-        console.log("Instruction: create a model, then click on its picture")
+        console.log("5. Once you've created a model, click on the man in the red suit.")
     }, [])
 
     return (

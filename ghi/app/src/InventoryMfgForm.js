@@ -38,7 +38,7 @@ class InventoryMfgForm extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Instruction: create a manufacturer named 'flex', then click on Inventory");
+    console.log("3. Create a manufacturer named 'flex', then make a Vehicle Model named 'Costume'");
   }
 
   render() {

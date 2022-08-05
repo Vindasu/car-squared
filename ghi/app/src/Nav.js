@@ -41,7 +41,7 @@ function Nav() {
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="http://localhost:3000/">
-                Subjects
+                
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <NavLink className="dropdown-item" to="/">Subject A</NavLink>

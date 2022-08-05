@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function InventoryPage() {
 
     useEffect(() => {
-        console.log("Instruction: create a manufacturer, then a model")
+        console.log("2. Create a Vehicle Model/MFG named Costume Flex")
     }, [])
 
     return (

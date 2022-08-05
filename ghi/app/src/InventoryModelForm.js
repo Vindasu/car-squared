@@ -33,7 +33,7 @@ class InventoryModelForm extends React.Component {
     const response = await fetch(url, fetchConfig);
     console.log("response: ", response);
     if (response.ok) {
-        console.log("responsen ok");
+        console.log("good job");
         const cleared = {
             name: '',
             picture_url: '',
@@ -60,7 +60,7 @@ class InventoryModelForm extends React.Component {
 
   async componentDidMount() {
     
-    console.log("Instruction: create a model named 'costume', a picture URL for 'www.google.com', and choose the manufacturer 'flex', then go back to the models");
+    console.log("4. Create a model named 'Costume', a picture URL for 'www.google.com', and choose the manufacturer 'flex', then go back to the models");
 
     const url = 'http://localhost:8100/api/manufacturers/';
 

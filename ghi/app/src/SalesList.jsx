@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import App from './App';
-
+import { NavLink } from 'react-router-dom';
 
 class SalesList extends React.Component {
     constructor(props) {
@@ -14,6 +14,7 @@ class SalesList extends React.Component {
             const data = await response.json()
             console.log(data)
             this.setState({ sales: data.sales })
+            console.log("6. In sales, we know that SOMEONE is -always- right. Click on that someone.");
         }
     }
 
@@ -36,9 +37,9 @@ class SalesList extends React.Component {
                 <tr>
                 <th>Sales Person</th>
                 <th>Employee Number</th>
-                <th>Customer</th>
+                <th><NavLink className="nav-link" to="/sales">Customer</NavLink></th>
                 <th>VIN</th>
-                <th>Sale Price</th>
+                <th>Sale Price </th>
                 </tr>
             </thead>
             <tbody>
