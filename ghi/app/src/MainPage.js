@@ -1,4 +1,7 @@
 import './App.css';
+import { NavLink } from 'react-router-dom';
+import React from 'react';
+
 function MainPage() {
   return (
     <div className="px-5 py-5 my-5 text-center">
@@ -11,8 +14,9 @@ function MainPage() {
       <div className="col-lg-3 mx-auto">
       </div>
         <p className="lead mb-4">
-          CarCar takes you FarFar... harhar
+          CarCar takes you FarFar... <NavLink className="navbar-brand" to="/customer/new">harhar</NavLink>
         </p>
+        
         
       </div>
       <div></div>
