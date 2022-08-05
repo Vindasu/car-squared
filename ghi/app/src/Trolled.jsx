@@ -8,7 +8,7 @@ function Trolled() {
             <button variant="secondary" size="lg"
                 onClick={(e) => {
                     e.preventDefault();
-                    window.location.href='http://localhost:3000/';
+                    window.location.href='http://localhost:3000/welcome/home';
                 }}
                 >Take me home
             </button>

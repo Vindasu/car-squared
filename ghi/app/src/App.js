@@ -23,6 +23,7 @@ import InventoryModelForm from './InventoryModelForm';
 import InventoryAutoList from './InventoryAutoList';
 import InventoryAutoForm from './InventoryAutoForm';
 
+import MainPage2 from './MainPage2';
 import Rolled from './Rolled';
 import Trolled from './Trolled';
 
@@ -53,6 +54,7 @@ function App() {
           <Route path="services/history" element={<ServiceHistoryList />} />
           <Route path="/rolled" element={<Rolled/>} />
           <Route path="/rolled/trolled" element={<Trolled/>} />
+          <Route path="/welcome/home" element={<MainPage2/>} />
         </Routes>
       </div>
     </BrowserRouter>
