@@ -66,5 +66,4 @@ class InventoryMfgForm extends React.Component {
     );
   }
 }
-
 export default InventoryMfgForm;
