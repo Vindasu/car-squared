@@ -6,9 +6,7 @@ function Nav() {
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/rolled">CarCar</NavLink>
         <div className="form-check form-switch">
-          <NavLink className="navbar-brand" to="http://www.google.com/">CarCar
-          <input type="checkbox" className="form-check-input" id="darkSwitch" />.0
-          </NavLink>
+          <input type="checkbox" className="form-check-input" id="darkSwitch" />
           <label className="custom-control-label" htmlFor="darkSwitch">Dark Mode</label>
           <input className="form-check-input" type="checkbox" id="lightSwitch" />
         </div>

@@ -7,6 +7,21 @@ Team:
 
 ## Design
 
+Our project is broken into three sections:
+
+* Inventory
+* Sales
+* Services
+
+### Inventory
+
+The inventory serves as the parent for the automobile model and the sales and service microservices poll to an automobile virtual object locally. 
+The inventory service also hosts the manufacturer and vehicle model which are accessable globally via a linear foreignkey route (mfg accessible in vehiclemodel, vehicle model accessible in automobile, automobile polled to the service and sales microservices). 
+
+### Sales and Services
+
+The sales and service microservices are centered around their Sale and Appointment models respectively. A sale can be made with a salesperson, customer, and automobile and can be referenced in either the Sales List or the Sales History List the latter of which can use the employee name to sort. An appointment can be made with a technician, a customer (and their reason/date), and an automobile. If their automobile is present in the inventory model, they receive a "VIP" state. They can be sorted by a VIN search function. The inventory model was also integrated with Pexels API to populate the inventory with images of the make and model of your car for convenience. 
+
 ## Service microservice
 
 I created a Technician and an Appointment model, with the technician as a foreign key to the appointment. I also created an Automobile value object within the Services app in order to pull data from the Automobile entity from the Inventory microservice.
@@ -23,3 +38,18 @@ The service history React page filters all appointments with a boolean status of
 
 Explain your models and integration with the inventory
 microservice, here.
+The sales microservice is broken into three models:
+* AutomobileVO
+* Employee
+* Customer
+
+### AutomobileVO
+
+1. AutomobileVO 
+    * The AutomobileVO is a virtual object of the Automobile model in the inventory microservice. 
+2. Employee
+    * The Employee model takes a name and an employee_number.
+3. Customer
+    * The Customer model takes a name, an address, and a phone_number.
+4. Sale
+    * The Sale model has foreignkeys to the Employee model, the AutomobileVO model, and the Customer model. It also has a price variable that is a decimalfield (with 2 decimal places representing a dolar amount).
