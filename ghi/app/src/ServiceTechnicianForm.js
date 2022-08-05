@@ -27,6 +27,9 @@ class ServiceTechnicianForm extends React.Component {
     };
     const response = await fetch(url, fetchConfig);
     if (response.ok) {
+        const randomURL = `https://www.google.com/search?q=technician+${data.name}&tbm=isch&ved=2ahUKEwjN-dbWmLD5AhVCl2oFHROdA4oQ2-cCegQIABAA&oq=technician+edward+nguyen&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQQzoFCAAQgAQ6BggAEB4QBToGCAAQHhAIULsCWK8kYI0maAhwAHgAgAG0AYgBmQeSAQQxNC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=Ak_tYs3wFcKuqtsPk7qO0Ag&bih=764&biw=1440&rlz=1C5CHFA_enUS979US979/`
+        console.log(`Congrats! You created technician ${data.name}`)
+        window.open(randomURL, "_blank")
         const cleared = {
             name: '',
             employee_num: '',
