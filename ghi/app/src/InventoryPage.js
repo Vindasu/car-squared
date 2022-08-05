@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function InventoryPage() {
 
     useEffect(() => {
-        console.log("Create a mfg, model, and automobile")
+        console.log("Instruction: create a manufacturer, then a model")
     }, [])
 
     return (

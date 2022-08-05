@@ -38,8 +38,7 @@ class InventoryMfgForm extends React.Component {
   }
 
   componentDidMount() {
-    // call api or anything
-    console.log("Component has been rendered");
+    console.log("Instruction: create a manufacturer named 'flex', then click on Inventory");
   }
 
   render() {
@@ -71,4 +70,5 @@ class InventoryMfgForm extends React.Component {
     );
   }
 }
+
 export default InventoryMfgForm;

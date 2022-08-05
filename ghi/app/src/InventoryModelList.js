@@ -16,6 +16,10 @@ function InventoryModelList() {
         fetchModels()
     }, [])
 
+    useEffect(() => {
+        console.log("Instruction: create a model, then click on its picture")
+    }, [])
+
     return (
         <>
             <button

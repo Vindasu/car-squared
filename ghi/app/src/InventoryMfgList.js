@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { NavLink } from 'react-router-dom';
 function InventoryMfgList() {
     const [manufacturers, setManufacturers] = useState([])
 
@@ -16,7 +15,7 @@ function InventoryMfgList() {
     }, [])
 
     useEffect(() => {
-        console.log("Create Manufacturer")
+        console.log("Instruction: create a manufacturer")
     }, [])
 
     return (

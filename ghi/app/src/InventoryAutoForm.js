@@ -63,6 +63,9 @@ class InventoryAutoForm extends React.Component {
   }
 
   async componentDidMount() {
+
+    console.log("Create an automobile, then click on new sales person");
+
     const url = 'http://localhost:8100/api/models/';
 
     const response = await fetch(url);

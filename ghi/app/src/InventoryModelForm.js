@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import { NavLink } from 'react-router-dom';
 
 class InventoryModelForm extends React.Component {
   constructor(props) {
@@ -61,6 +60,8 @@ class InventoryModelForm extends React.Component {
 
   async componentDidMount() {
     
+    console.log("Instruction: create a model named 'costume', a picture URL for 'www.google.com', and choose the manufacturer 'flex', then go back to the models");
+
     const url = 'http://localhost:8100/api/manufacturers/';
 
     const response = await fetch(url);

@@ -15,6 +15,10 @@ function InventoryAutoList() {
         fetchAutos()
     }, [])
 
+    useEffect(() => {
+        console.log("Create automobile")
+    }, [])
+
     return (
         <>
             <button
