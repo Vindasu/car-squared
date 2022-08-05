@@ -1,0 +1,39 @@
+.BackGround {
+    background-image: 
+    url(
+"https://i.imgur.com/7oMmZ5l.png");
+    background-size: "inherit";
+    height: 100vh;
+    margin-top: -20px;
+    background-repeat:no-repeat; 
+}
+
+.opacity80 {
+    background: rgba(255,255,255,0.8);
+    }
+
+.form-control {
+    color: rgb(255, 255, 255);
+    background-color: #4a4a4a!important;
+}
+
+.form-control:focus {
+    color: rgb(255, 255, 255);
+    background-color: #4a4a4a!important;
+}
+
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
