@@ -4,7 +4,6 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        
         <NavLink className="navbar-brand" to="/rolled">CarCar</NavLink>
         <div className="form-check form-switch">
           <input type="checkbox" className="form-check-input" id="darkSwitch" />
@@ -39,6 +38,16 @@ function Nav() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/saleshistory">Sales History</NavLink>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="http://localhost:3000/">
+                Subjects
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <NavLink className="dropdown-item" to="/">Subject A</NavLink>
+                <NavLink className="dropdown-item" to="/">Subject B</NavLink>
+                <NavLink className="dropdown-item" to="/">Subject C</NavLink>  
+              </ul>
             </li>
           </ul>
         </div>
