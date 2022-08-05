@@ -38,6 +38,7 @@ The service history React page filters all appointments with a boolean status of
 
 Explain your models and integration with the inventory
 microservice, here.
+
 The sales microservice is broken into three models:
 * AutomobileVO
 * Employee
@@ -46,10 +47,11 @@ The sales microservice is broken into three models:
 ### AutomobileVO
 
 1. AutomobileVO 
-    * The AutomobileVO is a virtual object of the Automobile model in the inventory microservice. 
+    * The AutomobileVO accesses the inventory microservice Automobile model via a polling function. Then, when the AutomobileVO model is accessed by a view, it assesses the import_href value and confirms that the hrefs are equivalent between the services. 
+
 2. Employee
-    * The Employee model takes a name and an employee_number.
+    * The Employee model takes a name and an employee_number. It is unique in that the employee_number and the ID are not necessarily equivalent. We thought it would be nice for employees to be able to select their own employee number and we use the native ID for equivalency. 
 3. Customer
     * The Customer model takes a name, an address, and a phone_number.
 4. Sale
-    * The Sale model has foreignkeys to the Employee model, the AutomobileVO model, and the Customer model. It also has a price variable that is a decimalfield (with 2 decimal places representing a dolar amount).
+    * The Sale model has foreignkeys to the Employee model, the AutomobileVO model, and the Customer model. It also has a price variable that is a decimalfield (with 2 decimal places representing a dolar amount). 
