@@ -37,7 +37,7 @@ class SalesList extends React.Component {
                 <tr>
                 <th>Sales Person</th>
                 <th>Employee Number</th>
-                <th><NavLink className="nav-link" to="/sales">Customer</NavLink></th>
+                <th><NavLink className="nav-link" to="/customer/new">Customer</NavLink></th>
                 <th>VIN</th>
                 <th>Sale Price </th>
                 </tr>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { NavLink } from 'react-router-dom';
 
 class CustomerForm extends React.Component {
     constructor(props) {
@@ -52,8 +53,10 @@ class CustomerForm extends React.Component {
         this.setState({phone_number: value})
     }
     
-    // async componentDidMount() {
-    //     const url = 'http://localhost:8100/api/automobiles/';
+    async componentDidMount() {
+        console.log("7 AND 8. The customer might always be right, but home is where we started, and where we'll end. Click on customer, then you'll find your reward once you click on the glorious name of our project, 'CarCar' at the top left.")
+    }
+        //     const url = 'http://localhost:8100/api/automobiles/';
     //     const response = await fetch(url);
 
     //     if (response.ok) {
@@ -68,7 +71,7 @@ class CustomerForm extends React.Component {
         <div className="row">
             <div className="offset-3 col-6">
             <div className="shadow p-4 mt-4">
-                <h1>Create a New Customer</h1>
+                <h1>Create a New <NavLink className="nav-link" to="/">Customer</NavLink></h1>
                 <form onSubmit={this.handleSubmit} id="create-customer-form">
                 <div className="form-floating mb-3">
                     <input value={this.state.name} onChange={this.handleNameChange} placeholder="Name" required type="text" name="name" id="name" className="form-control" />

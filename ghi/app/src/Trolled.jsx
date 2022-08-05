@@ -1,4 +1,8 @@
+import { useEffect } from "react";
+
 function Trolled() {
+    useEffect(() => {
+        console.log("10. This has to be the last one, right???")})
     return (
         <>
             <div className="video-responsive">

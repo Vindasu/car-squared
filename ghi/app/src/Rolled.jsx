@@ -1,6 +1,9 @@
-
+import { useEffect } from "react";
 
 function Rolled() {
+
+    useEffect(() => {
+        console.log("9!!! You're not there yet, 'Take me home'")})
     return (
         <>
             <div>
