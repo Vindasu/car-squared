@@ -16,6 +16,9 @@ function MainPage() {
         <p className="lead mb-4">
           CarCar takes you FarFar... <NavLink className="navbar-brand" to="/customer/new">harhar</NavLink>
         </p>
+        <p>
+          Hidden Challenge: Follow the Yellow Brick Code!
+        </p>
         
         
       </div>
@@ -23,5 +26,5 @@ function MainPage() {
     </div>
   );
 }
-
+console.log("Click on the result of our hilarious slogan!")
 export default MainPage;
