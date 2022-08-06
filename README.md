@@ -58,4 +58,4 @@ The sales microservice is broken into three models:
 
 ### Integration
 
-    * The Sale model requires an automobile with the manufacturer and vehicle model characteristics. Because the Inventory microservice hosts the the required models, the polling service between Inventory and Sales microservices is instrumental to the overall integration.
+The Sale model requires an automobile with the manufacturer and vehicle model characteristics. Because the Inventory microservice hosts the the required models, the polling service between Inventory and Sales microservices is instrumental to the overall integration.
