@@ -20,7 +20,7 @@ The inventory service also hosts the manufacturer and vehicle model which are ac
 
 ### Sales and Services
 
-The sales and service microservices are centered around their Sale and Appointment models respectively. A sale can be made with a salesperson, customer, and automobile and can be referenced in either the Sales List or the Sales History List the latter of which can use the employee name to sort. An appointment can be made with a technician, a customer (and their reason/date), and an automobile. If their automobile is present in the inventory model, they receive a "VIP" state. They can be sorted by a VIN search function. The inventory model was also integrated with Pexels API to populate the inventory with images of the make and model of your car for convenience. 
+The sales and service microservices are centered around their Sale and Appointment models respectively. A sale can be made with a salesperson, customer, and automobile and can be referenced in either the Sales List or the Sales History List the latter of which can use the employee name to sort. An appointment can be made with a technician and an automobile. If their automobile is present in the inventory model, they receive a "VIP" state. They can be sorted by a VIN search function. The inventory model was also integrated with Pexels API to populate the inventory with images of the make and model of your car for convenience. 
 
 ## Service microservice
 
