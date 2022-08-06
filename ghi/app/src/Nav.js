@@ -1,4 +1,6 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route, Routes, Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './App.css';
 
 function Nav() {
   return (
@@ -7,7 +9,9 @@ function Nav() {
         <NavLink className="navbar-brand" to="/rolled">CarCar</NavLink>
         <div className="form-check form-switch">
           <input type="checkbox" className="form-check-input" id="darkSwitch" />
-          <label className="custom-control-label" htmlFor="darkSwitch">Dark Mode</label>
+          <a href="https://darkreader.org/" target="_blank" rel="noreferrer">Dark Mode
+          {/* <label className="custom-control-label" htmlFor="darkSwitch">Dark Mode</label> */}
+          </a>
           <input className="form-check-input" type="checkbox" id="lightSwitch" />
         </div>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +55,11 @@ function Nav() {
       </div>
     </nav>
   )
+}
+function About() {
+  window.location.href('https://darkreader.org/');
+
+  return null;
 }
 
 export default Nav;
