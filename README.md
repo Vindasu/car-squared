@@ -44,7 +44,7 @@ The sales microservice is broken into three models:
 * Employee
 * Customer
 
-### AutomobileVO
+### Models
 
 1. AutomobileVO 
     * The AutomobileVO accesses the inventory microservice Automobile model via a polling function. Then, when the AutomobileVO model is accessed by a view, it assesses the import_href value and confirms that the hrefs are equivalent between the services. 
@@ -55,3 +55,7 @@ The sales microservice is broken into three models:
     * The Customer model takes a name, an address, and a phone_number.
 4. Sale
     * The Sale model has foreignkeys to the Employee model, the AutomobileVO model, and the Customer model. It also has a price variable that is a decimalfield (with 2 decimal places representing a dolar amount). 
+
+### Integration
+
+    * The Sale model requires an automobile with the manufacturer and vehicle model characteristics. Because the Inventory microservice hosts the the required models, the polling service between Inventory and Sales microservices is instrumental to the overall integration.

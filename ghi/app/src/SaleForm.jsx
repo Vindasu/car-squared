@@ -88,7 +88,7 @@ class SaleForm extends React.Component {
             })
 
         }
-        console.log("7 AND 8. The customer might always be right, but home is where we started, and where we'll end. Click on customer, then you'll find your reward once you click on the glorious name of our project, 'CarCar' at the top left.")
+        
     }
 
     
